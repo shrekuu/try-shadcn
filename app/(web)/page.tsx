@@ -1,4 +1,7 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
+import Faq from "./_components/faq";
 
 export default function Home() {
   return (
@@ -47,7 +50,22 @@ export default function Home() {
           >
             Read our docs
           </a>
+
+          <Button>Hello shadcn/ui</Button>
+
+
+          <div>
+            <Link
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="/dashboard">
+              Dashboard
+              </Link>
+          </div>
         </div>
+
+        <Faq />
+
+
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
